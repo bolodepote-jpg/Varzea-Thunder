@@ -1,0 +1,20 @@
+<div>
+  <label class="lbl">Escolha seu Tanque</label>
+  <div class="cards" id="cards"></div>
+</div>
+
+<div class="row" id="initialBtns">
+  <button class="btn" id="bCreate">Criar Nova Sala</button>
+  <div class="input-group">
+    <input type="text" id="rInput" placeholder="CÓDIGO DA SALA" maxlength="6">
+    <button class="btn alt" id="bJoin" style="background:var(--line);color:var(--fg)">Entrar</button>
+  </div>
+</div>
+
+<div id="roomLobby" style="display:none">
+  <div id="roomInfo">Sala: <b id="rCodeDisplay">----</b></div>
+  <p class="sub" style="margin-top:8px">Aguardando jogadores na sala...</p>
+  <div id="playersList" style="margin-bottom:10px;font-size:13px;color:var(--dim)"></div>
+  <button class="btn" id="bStart" style="display:none">Iniciar Partida Online</button>
+</div>
+<p id="note" style="color:var(--danger);font-size:12px;margin:0;text-align:center"></p>
